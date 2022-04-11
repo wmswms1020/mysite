@@ -32,6 +32,10 @@ a:active  {color: #000000; text-decoration: none;}   /* 클릭했을때 빨간�
 
 .bold {font-weight: bold;}
 
+.pointer {
+	cursor: pointer;
+}
+
 
 /* ******************레이아웃************************** */
 #wrap {

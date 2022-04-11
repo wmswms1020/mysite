@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"  href="/javaStudy/workspace_fornt/mysite/assets/css/mysite.css">
+<link rel="stylesheet"  href="/javaStudy/workspace_fornt/mysite/assets/css/board.css">
+
+</head>
+<body>
+<div id="wrap">
+	<div id="header" class="clearfix">
+		<h1>Mysite</h1>
+		<ul class="clearfix"> 
+			<li><a href="">로그인</a></li>
+			<li><a href="">회원가입</a></li>
+		</ul>
+	</div>
+	<!-- //header -->
+
+	<div id="nav">
+		<ul class="clearfix">
+			<li>입사지원서</li>
+			<li>게시판</li>
+			<li>갤러리</li>
+			<li>방명록</li>
+		</ul>
+	</div>
+	<!-- //nav -->
+
+	<div id="contents" class="clearfix">
+		<div id="aside">
+			<h2>게시판</h2>
+		
+			<ul>
+				<li>일반게시판</li>
+				<li>댓글게시판</li>
+				<li>첨부게시판</li>
+			</ul>
+		</div>
+		<!-- //aside -->
+		
+		<div id="main-content">
+			<div id="main-content-header">
+				<h3>일반게시판</h3>
+			
+				<!-- 
+				<ol>
+					<li>홈</li>
+					<li>게시판</li>
+					<li>일반게시판</li>
+				</ol>
+				-->
+			
+			</div>
+			<!-- //main-content-header -->
+			
+			<div id="main-content-body">
+				<!-- 게시판선택 -->
+				<div class="form-group">
+					<label class="form-title" for="sel-board">게시판선택</label>
+					<select id="sel-board">
+						<option>선택해 주세요</option>
+						<option>공지사항</option>
+						<option>일반게시판</option>
+						<option>익명게시판</option>
+					</select>
+				</div>
+				
+				<!-- 제목-->
+				<div class="form-group">
+					<label class="form-title" for="txt-title">제목</label>
+					<input id="txt-title" type="text">
+				</div>
+				
+				<!-- 비밀번호-->
+				<div class="form-group">
+					<label class="form-title" for="txt-password">비밀번호</label>
+					<input id="txt-password" type="password">
+				</div>
+				
+				<!-- 공개범위 -->
+				<div class="form-group">
+					<span class="form-title">공개범위</span>
+					<label for="p01">본인</label><input id="p01" type="radio" name="permit">
+					<label for="p02">로그인회원</label><input id="p02" type="radio" name="permit">
+					<label for="p03">친구</label><input id="p03" type="radio" name="permit">
+					<label for="p04">로그인회원</label><input id="p04" type="radio" name="permit">
+				</div>
+				
+				<!-- 허용범위 -->
+				<div class="form-group">
+					<span class="form-title">허용범위</span>
+					<label for="a01">댓글허용</label><input id="a01" type="radio" name="allow">
+					<label for="a02">답글허용</label><input id="a02" type="radio" name="allow">
+					<label for="a03">좋아요허용</label><input id="a03" type="radio" name="allow">
+				</div>
+				
+				<!-- 글내용 -->
+				<div class="form-group">
+					<textarea id="txt-content"></textarea>
+				</div>
+				
+				<!-- 첨부파일 -->
+				<div class="form-group">
+					<label class="form-title">첨부파일</label>
+					<input type="file">
+				</div>
+				
+			</div>
+			<!-- //main-content-body -->
+
+			<div id="main-content-footer">
+				<button class="btn">등록</button>
+				<button class="btn">초기화</button>
+			</div>
+			<!-- //main-content-footer -->
+
+		</div>	
+		<!-- //main-content -->
+	
+	</div>
+	<!-- //contents -->
+
+	<div id="footer">
+		Copyright ⓒ 2020 황일영, All right reserved
+	</div>
+	<!-- //footer -->
+
+
+</div>
+<!-- //wrap -->
+
+</body>
+</html>
